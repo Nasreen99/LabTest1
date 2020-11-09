@@ -1,0 +1,7 @@
+
+def multiply_output(function):
+    function = "Python" * 2
+    return function
+
+arg = multiply_output(2)
+print(arg)
