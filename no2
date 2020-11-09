@@ -1,9 +1,16 @@
-def countBits(n):
-    count = 0
-    while (n):
-        count += n & 1
-        n >>= 1
-    return count
+def countMostCommonLetter():
+    letter_dict = dict()
+    mostCommonLetter = string[0]
+        
+    for letter in string:
+        if letter not in letter_dict:
+            letter_dict[letter] = 1
+        else:
+            letter_dict[letter] += 1
+        if letter_dict[letter] > letter_dict[mostCommonLetter]:
+            mostCommonLetter = letter
+        
+    return mostCommonLetter
 
-i = 24
-print(countBits(i))
+string = "anappleisnotatomato"
+print(countMostCommonLetter())
