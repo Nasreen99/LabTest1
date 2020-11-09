@@ -1,0 +1,5 @@
+def countWords():
+    return len(string.split(' '))
+    
+string = "I have Python exam"
+print(countWords())
